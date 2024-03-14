@@ -1,4 +1,4 @@
-﻿// Listing 9-3 - 9-6
+﻿// Listing 9-6
 
 namespace CleanCodeChapter9
 {
@@ -68,7 +68,7 @@ namespace CleanCodeChapter9
 
         public void WayTooHot()
         {
-            temperature = "TOO_HOT";
+            temperature = "WAY_TOO_HOT";
             heater = false;
             blower = true;
             cooler = true;
