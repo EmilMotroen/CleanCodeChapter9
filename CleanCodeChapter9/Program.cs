@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            EnvironmentController environmentController = new EnvironmentController();
+            Console.WriteLine($"Controller state: {environmentController.GetState()}");
         }
     }
 }

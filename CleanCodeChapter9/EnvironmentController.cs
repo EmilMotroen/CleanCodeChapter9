@@ -27,12 +27,53 @@ namespace CleanCodeChapter9
         {
             if (temp == "WAY_TOO_COLD")
             {
+                temperature = temp;
                 heater = true;
                 blower = true;
                 cooler = false;
                 hiTempAlarm = false;
                 loTempAlarm = true;
             }
+        }
+
+        public void wayTooCold()
+        {
+            temperature = "WAY_TOO_COLD";
+            heater = true;
+            blower = true;
+            cooler = false;
+            hiTempAlarm = false;
+            loTempAlarm = true;
+        }
+
+        public void TooHot()
+        {
+            temperature = "TOO_HOT";
+            heater = false;
+            blower = true;
+            cooler = true;
+            hiTempAlarm = false;
+            loTempAlarm = false;
+        }
+
+        public void TooCold()
+        {
+            temperature = "TOO_COLD";
+            heater = true;
+            blower = true;
+            cooler = false;
+            hiTempAlarm = false;
+            loTempAlarm = false;
+        }
+
+        public void WayTooHot()
+        {
+            temperature = "TOO_HOT";
+            heater = false;
+            blower = true;
+            cooler = true;
+            hiTempAlarm = true;
+            loTempAlarm = false;
         }
 
         public bool HeaterState()
